@@ -28,6 +28,10 @@ if(disparoSoldado1>disparoSoldado2){
 }
 
 console.log("--------------------------------------")
-
 }
 
+if(vidaSoldado1>0){
+    console.log("Ganador SOLDADO A")
+}else{
+    console.log("Ganador SOLDADO B")
+}
