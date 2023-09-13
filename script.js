@@ -1,37 +1,29 @@
-//Prueba si esta bien ejecutado JS
-let hola = 'hola'
-console.log(hola)
+// lanzamiento de javalina 
 
-// Algoritmo con condicional
+let vidaSoldado1 = 100;
 
-/* let persona = parseInt(prompt("ingrese su edad"))
+let vidaSoldado2 = 100;
+
+while(vidaSoldado1>0 && vidaSoldado2>0){
+
+    let disparoSoldado1 = parseInt(Math.random()*20)
+    let disparoSoldado2 = parseInt(Math.random()*20)
+
+console.log("El Soldado 1 le saca " + disparoSoldado1 + " de vida al Soldado2" )
+console.log("El Soldado 2 le saca " + disparoSoldado2 + " de vida al Soldado1" )
 
 
-if(persona >= 18){
-    console.log("felicidades entraste al sitio")
-}
-else{
-    console.log("No podes acceder al sitio siendo menor de edad")
-    alert("Tenes que ser mayor de edad")
-}
 
-console.log(typeof(persona)) */
 
-// Algoritmo con condicional y ciclo
-
-/* let numero = parseInt(prompt("ingrese un numero"))
-
-for(let i = 0 ; i <= 10; i++ ){
-    numero = numero + i
-    console.log(numero)
-} */
-
-// Simulador
-
-const sumarQueso = valorProducto => valorProducto + 100
-
-const calcularValor = valor => {
-    return sumarQueso(valor)
+if(disparoSoldado1>disparoSoldado2){
+    vidaSoldado2 -= disparoSoldado1
+    console.log("El Soldado 1 le saca " + disparoSoldado1 + " de vida al soldado 2")
+    console.log("El soldado 2 queda con " + vidaSoldado2 + " de vida")
+}else if(disparoSoldado2>disparoSoldado1){
+    vidaSoldado1 -= disparoSoldado2
+    console.log("El Soldado 2 le saca " + disparoSoldado1 + " de vida al soldado 1")
+    console.log("El soldado 1 queda con " + vidaSoldado1 + " de vida")
 }
 
-console.log(calcularValor(3500))
+
+}
